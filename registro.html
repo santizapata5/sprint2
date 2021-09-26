@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="shortcut icon" href="img/icono.png" type="img/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+    <header>
+        <div>
+            <form action="" id="formulario">
+                <fieldset>
+                    <legend><h2>Formulario registro</h2></legend>
+                    <Label for="campoNombre">Nombre Completo
+                        <input type="text" id='campoNombre' placeholder="Escribe tu nombre">
+                    </Label><br><br>
+                    <Label for="campoUsuario">Usuario
+                        <input type="text" id='campoUsuario' placeholder="Coloca tu usuario">
+                    </Label><br><br>
+                    <Label for="campoContraseña">Contraseña
+                        <input type="password" id='campoContrasena' placeholder="Coloca tu contraseña">
+                    </Label><br><br>
+                    <Label for="campoCorreo">Correo
+                        <input type="email" id='campoCorreo' placeholder="Digita tu correo">
+                    </Label><br><br>
+                    <Label for="campoConfirmacion">Confirme su correo
+                        <input type="email" id='campoConfirmacion'>
+                    </Label><br><br>
+                    <Label for="campoTelefono">Teléfono
+                        <input type="text" id="campoTelefono" placeholder="Escribe tu teléfono">
+                    </Label><br><br>
+
+                    <button type="submit" onclick="validar_correo();validar_contrasena_usuario()">Enviar formulario</button>
+
+                    <script type="text/javascript" src="js/validaciones.js"></script>  
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    
+</body>
+</html>
