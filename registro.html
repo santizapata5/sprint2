@@ -9,34 +9,40 @@
     <link rel="stylesheet" href="css/estilos.css">
 
 </head>
-<body>
+<body class="body_2">
     <header>
-        <div>
+        <div class="div1"> 
             <form action="" id="formulario">
                 <fieldset>
                     <legend><h2>Formulario registro</h2></legend>
                     <Label for="campoNombre">Nombre Completo
-                        <input type="text" id='campoNombre' placeholder="Escribe tu nombre">
+                        <input type="text" id='campoNombre' placeholder="Escriba aquí su nombre">
                     </Label><br><br>
                     <Label for="campoUsuario">Usuario
-                        <input type="text" id='campoUsuario' placeholder="Coloca tu usuario">
+                        <input type="text" id='campoUsuario' placeholder="Escriba aquí su usuario">
                     </Label><br><br>
                     <Label for="campoContraseña">Contraseña
-                        <input type="password" id='campoContrasena' placeholder="Coloca tu contraseña">
+                        <input type="password" id='campoContrasena' placeholder="Escriba aquí su contraseña">
                     </Label><br><br>
                     <Label for="campoCorreo">Correo
-                        <input type="email" id='campoCorreo' placeholder="Digita tu correo">
+                        <input type="email" id='campoCorreo' placeholder="Escriba aquí su correo">
                     </Label><br><br>
-                    <Label for="campoConfirmacion">Confirme su correo
+                    <Label for="campoConfirmacion">Confirme su correo electrónico
                         <input type="email" id='campoConfirmacion'>
                     </Label><br><br>
                     <Label for="campoTelefono">Teléfono
-                        <input type="text" id="campoTelefono" placeholder="Escribe tu teléfono">
+                        <input type="text" id="campoTelefono" placeholder="Escriba aquí su teléfono">
                     </Label><br><br>
+
+                    <!-- añado botón tipo submit que al hacer clic llama a las dos funciones validar_correo() 
+                    y validar_contrasena_usuario() para que haga las respectivas validaciones -->
 
                     <button type="submit" onclick="validar_correo();validar_contrasena_usuario()">Enviar formulario</button>
 
+                    <!-- vinculo archivo HTML con el de Javascript -->
+
                     <script type="text/javascript" src="js/validaciones.js"></script>  
+
                 </fieldset>
             </form>
         </div>
